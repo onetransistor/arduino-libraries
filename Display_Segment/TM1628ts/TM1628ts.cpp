@@ -31,13 +31,13 @@ TM1628ts::TM1628ts(int clockPin, int dataPin, int strobePin) {
 	tm_clk = clockPin;
 	tm_dio = dataPin;
 	tm_stb = strobePin;
-	
-	pinMode(tm_dio, OUTPUT);
-	pinMode(tm_clk, OUTPUT);
-	pinMode(tm_stb, OUTPUT);
 }
 
 void TM1628ts::init(int intensity) {
+	pinMode(tm_dio, OUTPUT);
+	pinMode(tm_clk, OUTPUT);
+	pinMode(tm_stb, OUTPUT);
+	
 	digitalWrite(tm_stb, HIGH);
 	digitalWrite(tm_clk, HIGH);
 
