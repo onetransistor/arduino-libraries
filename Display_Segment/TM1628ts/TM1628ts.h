@@ -27,20 +27,19 @@
 
 #include "Arduino.h"
 
-typedef enum tm1628_status_e {
-  TM1628_MS_SEP = 0, // 0
-  TM1628_VIDEO = 1, // 8
-  TM1628_HM_SEP = 2, // 16
-  TM1628_AUDIO = 3, // 24
-  TM1628_PHOTO = 4, // 32
-  TM1628_PAUSE = 5, // 40
-  TM1628_TIMER = 6, // 48
-  TM1628_DVD = 7, // 56
-  TM1628_TYP_R = 9, // 72
-  TM1628_RECORD = 10, // 80
-  TM1628_PLAY = 11, // 88
-  TM1628_TYP_W = 13 // 104
-} tm1628_status;
+#define   TM1628_MS_SEP   0 // 0
+#define   TM1628_VIDEO    1 // 8
+#define   TM1628_HM_SEP   2 // 16
+#define   TM1628_AUDIO    3 // 24
+#define   TM1628_PHOTO    4 // 32
+#define   TM1628_PAUSE    5 // 40
+#define   TM1628_TIMER    6 // 48
+#define   TM1628_DVD      7 // 56
+#define   TM1628_TYP_R    9 // 72
+#define   TM1628_RECORD  10 // 80
+#define   TM1628_PLAY    11 // 88
+#define   TM1628_TYP_W   13 // 104
+
 
 
 class TM1628ts {
@@ -101,7 +100,7 @@ public:
 	void clearBuffer(int pos = -1);
 	
 	// 4. Set a status LED on (1) or off (0) in RAM buffer
-	void setStatus(tm1628_status status, int on = 1); // use only one status code at a time !!!
+	void setStatus(byte status, int on = 1); // use only one status code at a time !!!
 	
 	// 5. Write buffer to display controller (needed after above functions to actually send display data to controller)
 	void writeBuffer();

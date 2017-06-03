@@ -128,7 +128,7 @@ byte TM1628ts::getKeyboard() {
 	return keys;
 }
 
-void TM1628ts::setStatus(tm1628_status status, int on) {
+void TM1628ts::setStatus(byte status, int on) {
 	bitWrite(tm_buffer[status], 0, on > 0 ? 1 : 0);
 }
 
