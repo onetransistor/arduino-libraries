@@ -1,3 +1,4 @@
 OneTransistor Arduino compatible libraries
 
-- TM1628 library for TeleSystem TS5.9RX front panel
+- TM1628 [7-Segment] library for TeleSystem TS5.9RX front panel
+- SC75823 [13-Segment] library
