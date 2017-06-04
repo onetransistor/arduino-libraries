@@ -35,12 +35,7 @@
 #define SC75823_PTY			90
 #define SC75823_LOC			154
 
-class SC75823 {
-	
-	byte sc_buffer[20] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-						  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-						 };
-						 
+class SC75823 {						 
 	// ASCII code - 0x20
 	const unsigned short sc_font[65] = {
   0x0000, // Space
@@ -141,10 +136,10 @@ public:
 	
 	// buffer manipulations
 	void clearBuffer();
-	void putCharAt(byte data, int pos);
-	void putSmallDigit(byte digit);
-	void putString(char str[8]);
-	void setSignal(int strength = -1);
+	void putCharAt(byte data, int pos); // USE ONLY NUMBERS & UPPERCASE LETTERS!
+	void putSmallDigit(byte digit); // HEX is supported
+	void putString(char str[8]); // USE ONLY NUMBERS & UPPERCASE LETTERS!
+	void setSignal(int strength = -1); // -1 = hide, 0 = show antenna icon, 1-3 = show antenna and level
 	void setIndicator(int indicator, int on = 1); // use only one at a time
 	void setInnerDisc(int centre = 1, byte mask = 0);
 	void setSmallDisc(int frame = 1, byte mask = 0);
@@ -156,13 +151,13 @@ public:
 	
 private:
 	int sc_clk, sc_data, sc_ce, sc_inh;
+	byte sc_buffer[20] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+						  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+						 };
 	
 	void sendByte(byte data);
 	void sendData();
 	void sendAddress(byte address);
-	
-
-
 };
 
 #endif
