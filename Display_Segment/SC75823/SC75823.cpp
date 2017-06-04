@@ -93,10 +93,11 @@ void SC75823::putSmallDigit(byte digit) {
 }
 
 void SC75823::putString(char str[8]) {
-	for (int i = 8; i; i--) {
-		char c = str[8 - i] - 0x20;
-		putCharAt(c, i);
-	}
+	for (int i = 8; i; i--) 
+		if (str[8 - i]) {
+			char c = str[8 - i] - 0x20;
+			putCharAt(c, i);
+		}
 }
 
 void SC75823::setSignal(int strength) {
