@@ -64,7 +64,7 @@ class TM1628ts {
 //  1   1   1   1   1   1   0   = 0x7e (displays 0)
 //  1   0   0   1   0   0   0   = 0x48 (displays 1) ... and so on
 
-int tm_fonts[18] = {0x7e, 0x48, 0x73, 0x6b, 0x4d, // 0, 1, 2, 3, 4
+const unsigned char tm_digit[18] = {0x7e, 0x48, 0x73, 0x6b, 0x4d, // 0, 1, 2, 3, 4
                  0x2f, 0x3f, 0x68, 0x7f, 0x6f, // 5, 6, 7, 8, 9
                  0x7d, 0x1f, 0x36, 0x5b, 0x37, 0x35, // A, b, C, d, E, F
                  0x01, // minus sign
@@ -83,11 +83,8 @@ public:
 	void init(int intensity = -1);
 	
 	// Turn on/off and set intensity
-	// 1. Turn display on (1) or off (0)
-	void turnOn(int on = 1);
-	
-	// 2. Change intensity 0..7
-	void setIntensity(int intensity);
+	// 1. Change intensity 0..7; -1 = display off
+	void setIntensity(int intensity = -1); 
 	
 	// Buffer operations
 	// 1. Set digit at position in RAM buffer (overwrites previous digit)

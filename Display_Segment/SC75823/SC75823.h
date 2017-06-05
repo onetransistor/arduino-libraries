@@ -15,9 +15,6 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. 
-	
-	TO DO: Add more characters in sc_font
-
 */
 
 #ifndef SC75823_H
@@ -40,20 +37,20 @@ class SC75823 {
 	const unsigned short sc_font[65] = {
   0x0000, // Space
   0x0000, // !
-  0x0000, // "
+  0x0410, // "
   0x0000, // #
   0x0000, // $
   0x0000, // %
   0x0000, // &
-  0x0000, // '
-  0x0000, // (
-  0x0000, // )
-  0x0000, // *
-  0x0000, // +
-  0x0000, // ,
-  0x0000, // -
-  0x0000, // .
-  0x0000, // /
+  0x0400, // '
+  0x0600, // (
+  0x0018, // )
+  0x0718, // *
+  0x0920, // +
+  0x0008, // ,
+  0x0820, // -
+  0x0200, // .
+  0x0408, // /
   0x64ce, // 0
   0x6400, // 1
   0x28e4, // 2
@@ -67,7 +64,7 @@ class SC75823 {
   0x0000, // :
   0x0000, // ;
   0x0000, // <
-  0x0000, // =
+  0x0860, // =
   0x0000, // >
   0x0000, // ?
   0x0000, // @
@@ -98,11 +95,11 @@ class SC75823 {
   0x0510, // Y
   0x04c8, // Z
   0x0000, // [
-  0x0000, // back slash
+  0x0210, // back slash
   0x0000, // ]
   0x0000, // ^
-  0x0000, // _
-  0x0000  // `
+  0x0040, // _
+  0x0010  // `
 	};
 
 const byte sc_digit[16] = {
@@ -145,10 +142,9 @@ public:
 	void setSmallDisc(int frame = 1, byte mask = 0);
 	void setBigDisc(int frame = 1, byte mask = 0);
 	
-	// write to controller - call after the above functions to send data to LCD adn display it
+	// write to controller - call after the above functions to send data to LCD and display it
 	void writeBuffer();
 
-	
 private:
 	int sc_clk, sc_data, sc_ce, sc_inh;
 	byte sc_buffer[20] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,

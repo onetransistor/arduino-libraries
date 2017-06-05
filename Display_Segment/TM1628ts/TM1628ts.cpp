@@ -53,6 +53,10 @@ void TM1628ts::init(int intensity) {
 	
 	tm_sendCommand(0x03); // command 1
 	
+	setIntensity(intensity);
+}
+
+void TM1628ts::setIntensity(int intensity) {
 	if (intensity < 0) {
 		tm_sendCommand(0x80); // command 4
 		return;
@@ -61,20 +65,12 @@ void TM1628ts::init(int intensity) {
 	tm_sendCommand(0x88 | (intensity % 8)); // command 4
 }
 
-void TM1628ts::turnOn(int on) {
-	tm_sendCommand(on > 0 ? 0x88 : 0x80); // command 4
-}
-
-void TM1628ts::setIntensity(int intensity) {
-	tm_sendCommand(0x88 | (intensity % 8)); // command 4
-}
-
 void TM1628ts::putDigitAt(byte digit, int pos) {
 	if ((pos < 1) || (pos > 7))
 		return;
 	
 	for (int i = 0; i < 7; i++)
-		bitWrite(tm_buffer[i * 2], pos, bitRead(tm_fonts[digit], 6 - i));
+		bitWrite(tm_buffer[i * 2], pos, bitRead(tm_digit[digit], 6 - i));
 }
 
 void TM1628ts::putNumberAt(long int num, int startpos, int negative, byte base) {
