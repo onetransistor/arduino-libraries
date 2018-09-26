@@ -1,5 +1,4 @@
 Arduino library for MxL5007T integrated tuner
-###
 
 MxL5007T registers need to be configured with the correct XTAL frequency
 depending on crystal frequency.
