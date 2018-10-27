@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For TrulyBacklight
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TrulyBacklight	KEYWORD1	TrulyBacklight
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setControlPin	KEYWORD2
+reset	KEYWORD2
+setOnOff	KEYWORD2
+setIntensity	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
