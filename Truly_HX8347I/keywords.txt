@@ -1,0 +1,17 @@
+#######################################
+# Syntax Coloring Map For Truly_HX8347I
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Truly_HX8347I	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+color565	KEYWORD2
+backlightOn	KEYWORD2
+backlightIntensity	KEYWORD2
