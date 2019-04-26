@@ -2,7 +2,7 @@
 
 ### Display
 
-#### TM1628
+#### TM1628 (TM1628ts)
 
 A 7-Segment LED Driver from *Titan Microelectronics Co.,Ltd.* Library for a DVD player front panel (TeleSystem TS5.9RX). Uses a serial protocol similar to SPI. [Information and examples](https://www.onetransistor.eu/2017/06/tm1628-7segment-display-arduino.html).
 
@@ -19,6 +19,12 @@ A 7-Segment LED Driver from *Titan Microelectronics Co.,Ltd.* Library for a DVD 
 15-Segment VFD Driver from *Holtek Semiconductor Inc.* Used with *Futaba Corporation* **FV865ND** VFD panel for a satellite receiver. [Information and examples](https://www.onetransistor.eu/2017/06/fv865nd-ht16515-arduino.html).
 
 ![HT16515 with FV865ND](https://3.bp.blogspot.com/-ofvk8MYT7i0/XMMKREO7l4I/AAAAAAAAMj4/5o2mcjpgOxgPffEP0v1cJVPFCCDLS6sbQCLcBGAs/s1600/ht16515.png)
+
+#### HX8347-I (Truly_HX8347I)
+
+LCD driver from *Himax Technologies, Inc.* Integrated in *Truly International Holdings, Ltd.* **TFT3P5026-E** 320x240 color TFT 2.8" display. Used at front panel of Sercomm SHG1500 router (hardware revision LCDv6). Front panel has 2x15 pin 1.27 mm pinheader connector. Display uses SPI protocol (write only, no MISO). [Information and examples](https://www.onetransistor.eu/2018/10/router-lcd-and-keypad-to-arduino.html).
+
+![SHG1500 Front Panel](https://1.bp.blogspot.com/-zAk4kzmVo0Y/W7ixtLYi-eI/AAAAAAAALOI/-jWgCXYncf0eomH2yKayEUc7eO58Rvf6gCLcBGAs/s400/front_panel.jpg)
 
 ### Device Control
 
