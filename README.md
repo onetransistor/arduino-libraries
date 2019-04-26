@@ -1,5 +1,7 @@
 ## Arduino compatible libraries
 
+**Note:** Unless otherwise specified, the libraries are distributed under the terms of GNU General Public License version 3.
+
 ### Display
 
 #### TM1628 (TM1628ts)
@@ -22,7 +24,7 @@ A 7-Segment LED Driver from *Titan Microelectronics Co.,Ltd.* Library for a DVD 
 
 #### HX8347-I (Truly_HX8347I)
 
-LCD driver from *Himax Technologies, Inc.* Integrated in *Truly International Holdings, Ltd.* **TFT3P5026-E** 320x240 color TFT 2.8" display. Used at front panel of Sercomm SHG1500 router (hardware revision LCDv6). Front panel has 2x15 pin 1.27 mm pinheader connector. Display uses SPI protocol (write only, no MISO). [Information and examples](https://www.onetransistor.eu/2018/10/router-lcd-and-keypad-to-arduino.html).
+LCD driver from *Himax Technologies, Inc.* Integrated in *Truly International Holdings, Ltd.* **TFT3P5026-E** 320x240 color TFT 2.8" display. Used at front panel of Sercomm SHG1500 router (hardware revision LCDv6). Front panel has 2x15 pin 1.27 mm pinheader connector. Display uses SPI protocol (write only, no MISO). Includes backlight control. [Information and examples](https://www.onetransistor.eu/2018/10/router-lcd-and-keypad-to-arduino.html).
 
 ![SHG1500 Front Panel](https://1.bp.blogspot.com/-zAk4kzmVo0Y/W7ixtLYi-eI/AAAAAAAALOI/-jWgCXYncf0eomH2yKayEUc7eO58Rvf6gCLcBGAs/s400/front_panel.jpg)
 
