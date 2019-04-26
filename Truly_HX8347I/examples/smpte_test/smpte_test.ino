@@ -2,9 +2,9 @@
 #include "Adafruit_GFX.h"
 #include "Truly_HX8347I.h"
 
-#define SPI_CS  4 // SPI CS pin
-#define LCD_RST 2 // LCD reset pin (mandatory here)
-#define BKL_CTL 3 // backlight control pin (optional)
+#define SPI_CS  PA4 // SPI CS pin
+#define LCD_RST PA2 // LCD reset pin (mandatory here)
+#define BKL_CTL PA3 // backlight control pin (optional)
 
 Truly_HX8347I tft(SPI_CS, LCD_RST, BKL_CTL); 
 
@@ -33,8 +33,8 @@ void setup() {
   tft.fillRect( 57, 180, 57, 60, 0xffff);
   tft.fillRect(114, 180, 57, 60, tft.color565(0x32, 0x00, 0x6a));
 
-  tft.fillRect(228, 180, 19, 60, tft.color565(0x09, 0x09, 0x09));
-  tft.fillRect(266, 180, 19, 60, tft.color565(0x1d, 0x1d, 0x1d));
+  tft.fillRect(228, 180, 16, 60, tft.color565(0x09, 0x09, 0x09));
+  tft.fillRect(258, 180, 16, 60, tft.color565(0x1d, 0x1d, 0x1d));
 
   // text box
   tft.fillRect(80, 80, 160, 40, TFT_BLACK);
