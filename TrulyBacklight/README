@@ -1,0 +1,27 @@
+Arduino library for backlight control of Truly LCD front panel from
+Sercomm SHG1500 modem/router. Truly LCD is used on hardware version LCDv6.
+
+Usage scenario:
+
+At the beggining of program:
+	TrulyBacklight bl;
+
+In setup():
+	bl.setControlPin(pin);
+
+Anywhere in code:
+	bl.reset();
+	bl.setIntensity(0x10);
+	bl.setOnOff(HIGH);
+	bl.setOnOff(LOW);
+
+Intensity level is a number between 0 and 31.
+After bl.reset() it turns on at maximum intensity if you don't call immediately
+bl.setIntensity(). Turning on and off the backlight does not reset the intensity
+value unless you change it with bl.setIntensity() or call bl.reset(). After
+bl.setIntensity() is called backlight turns on with selected intensity value.
+
+
+
+
+
