@@ -6,6 +6,7 @@
   https://www.semtech.com/products/smart-sensing/touch-proximity-devices/SX8646
 
   Copyright (C) 2019 One Transistor <one1transistor@gmail.com>
+  https://www.onetransistor.eu/2019/04/arduino-library-semtech-sx8646.html
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
