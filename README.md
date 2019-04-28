@@ -24,7 +24,7 @@ A 7-Segment LED Driver from *Titan Microelectronics Co.,Ltd.* Library for a DVD 
 
 #### HX8347-I (Truly_HX8347I)
 
-LCD driver from *Himax Technologies, Inc.* Integrated in *Truly International Holdings, Ltd.* **TFT3P5026-E** 320x240 color TFT 2.8" display. Used at front panel of Sercomm SHG1500 router (hardware revision LCDv6). Front panel has 2x15 pin 1.27 mm pinheader connector. Display uses SPI protocol (write only, no MISO). Includes backlight control. [Information and examples](https://www.onetransistor.eu/2018/10/router-lcd-and-keypad-to-arduino.html).
+LCD driver from *Himax Technologies, Inc.* Integrated in *Truly International Holdings, Ltd.* **TFT3P5026-E** 320x240 color TFT 2.8" display. Used at front panel of Sercomm SHG1500 router (hardware revision LCDv6). Front panel has 2x15 pin 1.27 mm pinheader connector. Display uses SPI protocol (write only, no MISO). Includes backlight control. [Information and examples](https://www.onetransistor.eu/2018/10/router-lcd-and-keypad-to-arduino.html). Backlight only library is **TrulyBacklight** (not needed anymore).
 
 ![SHG1500 Front Panel](https://1.bp.blogspot.com/-zAk4kzmVo0Y/W7ixtLYi-eI/AAAAAAAALOI/-jWgCXYncf0eomH2yKayEUc7eO58Rvf6gCLcBGAs/s400/front_panel.jpg)
 
@@ -35,4 +35,10 @@ LCD driver from *Himax Technologies, Inc.* Integrated in *Truly International Ho
 An integrated VHF/UHF tuner from *MaxLinear, Inc.* Taken from a DVB-T receiver and placed in a metallic box from a broken tuner. [Information and examples](https://www.onetransistor.eu/2014/08/mxl5007t-based-radio.html).
 
 ![MxL5007T tuner](https://1.bp.blogspot.com/-8Kf_FHSy4bo/W7kC8uvH6VI/AAAAAAAALPg/gXfYyP14o2ofT1IRQeUDeoLqIhHQeg7-gCLcBGAs/s400/mxl5007t_metal_case.jpg)
+
+#### SX8646
+
+Ultra Low Power, Capacitive Button Touch Controller (8 sensors) with Enhanced LED Drivers from *Semtech Corporation*. Found on the front panel keypad of Sercomm SHG1500 routers. [Information and examples](https://www.onetransistor.eu/2019/04/arduino-library-semtech-sx8646.html).
+
+![SX8646 button panel](https://3.bp.blogspot.com/-cpDmO5muxRk/XMV4FgVX-8I/AAAAAAAAMmk/fcvBjeqDAGskOBsLN2bIqDq21ZEW7kosQCLcBGAs/s400/shg1500_keypad.jpg)
 
