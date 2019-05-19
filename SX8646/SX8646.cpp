@@ -100,7 +100,7 @@ void SX8646::handleInterruptInClass(void) {
 	irqSrc = readRegister(0x00);
 
 	if (irqSrc & 0x04) { // Buttons interrupt flag
-		(*keyHandler)(readRegister(0x02));
+		keyHandler(readRegister(0x02));
 		return;
 	}
 
