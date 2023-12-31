@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For SX8646
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SX8646	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+setKeyCallback	KEYWORD2
+
+######################################
+# Constants (LITERAL1)
+#######################################
+PANEL_NONE	LITERAL1
+PANEL_RIGHT	LITERAL1
+PANEL_DOWN	LITERAL1
+PANEL_LEFT	LITERAL1
+PANEL_OK	LITERAL1
+PANEL_UP	LITERAL1
+
